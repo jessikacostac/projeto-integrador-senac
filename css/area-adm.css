@@ -1,0 +1,118 @@
+@charset"utf8";
+
+.conteudo{
+    max-width: 100%;
+}
+.area-adm{
+    display: block;
+    border: solid;
+    text-decoration: none;
+    font-weight: bold;
+    color: #614f24;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 8px #ffffff;
+    /**border-radius: 5px;**/
+    padding: 10px;
+    width: 200px;
+    margin: 10px auto;
+    text-align: center;
+}
+.area-adm:hover, .area-adm:focus{
+    background-color: #614f24;
+    color: #ffffff;
+    box-shadow: 1px 1px 10px #614f24;
+    transform: scale(1.1);
+    transition: 0.8s;
+}
+table{
+    border: solid;
+    margin: auto;
+    margin-bottom: 20px;
+    /**border-radius: 10px;**/
+}
+th{
+    border: solid;
+    /**border-radius: 10px;**/
+}
+td{
+    border: solid #777474;
+    padding: 10px;
+    /**border-radius: 10px;**/
+}
+.excluir{
+    border: solid;
+    text-decoration: none;
+    font-weight: bold;
+    color: #614f24;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 8px #ffffff;
+    /**border-radius: 10px;**/
+    padding: 5px;
+    width: 50px;
+    text-align: center;
+}
+.excluir:hover, .excluir:focus{
+    background-color: #614f24;
+    color: #ffffff;
+    box-shadow: 1px 1px 10px #614f24;
+    transform: scale(1.1);
+    transition: 0.8s;
+}
+.inseri-volun a{
+    display: block;
+    border: solid;
+    text-decoration: none;
+    font-weight: bold;
+    color: #614f24;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 8px #ffffff;
+    /**border-radius: 5px;**/
+    padding: 10px;
+    width: 200px;
+    margin: 10px auto;
+    text-align: center;
+}
+.inseri-volun a:hover, .inseri-volun:focus{
+    background-color: #614f24;
+    color: #ffffff;
+    box-shadow: 1px 1px 10px #614f24;
+    transform: scale(1.1);
+    transition: 0.8s;
+}
+
+
+/**.tabela-pequena{
+    padding: 0px;
+    font-size: 0.8rem;
+    border-radius: 0px;
+}
+.tabela-pequena th{
+    padding: 0px;
+    margin: 0px;
+    border-radius: 0px;
+}
+.tabela-pequena td{
+    padding: 0px;
+    margin: 0px;
+    border-radius: 0px;
+}
+.tabela-pequena{}**/
+
+@media screen and (min-width: 800px){
+    .tabela-pequena{
+        border: solid;
+        margin: auto;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        font-size: 1.2rem;
+    }
+    .tabela-pequena th{
+        border: solid;
+        border-radius: 10px;
+    }
+    .tabela-pequena td{
+        border: solid #777474;
+        padding: 10px;
+        border-radius: 10px;
+    }
+}

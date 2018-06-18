@@ -1,0 +1,337 @@
+/* Configurações da página inteira */
+@charset"utf8";
+
+html{ font-size: 14px; }
+
+/* rodape */
+html, body { height: 100%; }
+#container {
+    min-height: 100%;
+    margin-bottom: -100px; /* alterar */
+}
+#container::after {
+    content: "";
+    display: block;
+}
+#rodape, #container::after {
+    height: 80px; /* alterar */
+}
+#rodape h5{
+    padding: 0px;
+}
+
+body{
+    background-image: url(../img/fundo.png);
+    background-repeat: repeat;
+    font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    color: #503c0d;
+}
+p{
+    line-height: 1.50;
+}
+
+/* Parti superior da página (header, nav) */
+#container{ max-width: 100%; }
+
+.topo{
+    background-color: #f1f1c1;
+}
+.logo{
+    /*border: solid;*/
+    margin: 0px;
+    padding: 0px;
+}
+.logo img{
+    width: 250px; /* MUDA */
+    max-width: 30%;
+    display: block;
+    margin: 0 auto;
+    padding: 10px; /* MUDA */
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1000px; /* MUDA */
+    max-width: 100%;
+    margin: 0 auto; /* MUDA */
+    padding-bottom: 10px; /* MUDA */
+}
+.menu a{
+    border: solid;
+    text-decoration: none;
+    font-weight: bold;
+    color: #614f24;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 8px #ffffff;
+    /**border-radius: 5px;**/
+    padding: 2px;
+}
+.menu a:hover, .menu a:focus{
+    background-color: #614f24;
+    color: #ffffff;
+    box-shadow: 1px 1px 10px #614f24;
+    transform: scale(1.1);
+    transition: 0.8s;
+}
+.superior{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+}
+
+/* Centralizando e deixando responsivo (slider, iframe) */
+.slick-slide img, iframe, img{
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0px;
+}
+iframe{
+    margin-bottom: -13px;
+}
+
+/* link de cadastro */
+.barra-cadastro{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /*font-size: 1.2rem;*/
+    font-weight: bold;
+    background-color: #9ac7d9;
+    padding: 0px;
+}
+.barra-cadastro a{
+    text-decoration: none;
+    color: #9ac7d9;
+    text-shadow: 1px 1px 1px black;
+    border: solid;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 5px;
+    padding: 3px;
+}
+.barra-cadastro a:hover, .barra-cadastro a:focus{
+    color: #ffffff;
+    background-color: #9ac7d9;
+    transition: 0.5s;
+}
+
+/* Classe para titulos */
+.titulo{
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+
+/* Quem somos */
+#quem-somos{
+    text-align: justify;
+    padding: 15px;
+}
+.icones{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 500px;
+    max-width: 100%;
+    margin: auto;
+}
+.icones img{
+    width: 100px;
+    padding: 0px;
+    margin: 0px;
+}
+
+#adocao{
+    background-image: url(../img/fundo.jpg);
+    max-width: 100%;
+}
+#adocao h1{
+    color: #ffffff;
+}
+.galeria{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.galeria img{
+    border: 2px solid #919191;
+    border-radius: 20px;
+    box-shadow: 4px 4px 5px black;
+    width: 270px;
+    max-width: 20%;
+    margin-bottom: 10px;
+}
+.galeria img:hover{
+    transform: scale(1.3);
+    transition: 0.8s;
+}
+
+/* Eventos */
+.caixa-evento{
+    box-shadow: 0px 0px 5px black;
+    width: 1000px;
+    max-width: 90%;
+    margin: auto;
+    padding: 5px;
+}
+.texto-evento{
+    text-align: justify;
+    width: 500px;
+    max-width: 90%;
+    margin: auto;
+}
+.centraliza{
+    text-align: center;
+}
+.data{
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #848484;
+}
+.local{
+    text-align: center;
+}
+.evento-img{
+    display: block;
+    margin: auto;
+    border: 2px solid #919191;
+    border-radius: 20px;
+    box-shadow: 4px 4px 5px black;
+    /**max-width: 100%;**/
+    width: 500px;
+    max-width: 80%;
+    margin-bottom: 15px;
+}
+.evento-img:hover{
+    transform: scale(1.1);
+    transition: 0.8s;
+}
+
+/* Contato */
+#contato{
+    padding: 10px;
+}
+.div-contato{
+    width: 300px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+.div-contato p{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.contato-logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;
+    max-width: 90%;
+    margin: auto;
+}
+.contato-logo img{
+    border: solid #a9a9a9;
+    border-radius: 100%;
+    box-shadow: 0px 0px 10px black;
+}
+.contato-logo img:hover{
+    transform: scale(1.3);
+    transition: 0.8s;
+}
+
+/* Voltar ao topo */
+#volta-topo{}
+#volta-topo p{}
+#volta-topo a{
+    border: solid;
+    text-decoration: none;
+    font-weight: bold;
+    color: #614f24;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 8px #ffffff;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+#volta-topo a:hover, #volta-topo a:focus{
+    background-color: #614f24;
+    color: #ffffff;
+    box-shadow: 1px 1px 10px #614f24;
+    transform: scale(1.1);
+    transition: 0.8s;
+}
+
+/* Rodape */
+#rodape{
+    background-color: #000000;
+}
+#rodape h5{
+    color: #ffffff;
+    text-align: center;
+    padding: 0px;
+}
+
+
+@media screen and (min-width: 500px){
+    .menu{
+        justify-content: space-around;
+    }
+}
+@media screen and (min-width: 650px){
+    body{
+        font-size: 1.1rem;
+    }
+    
+    .topo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu{
+        width: 700px;
+        max-width: 100%;
+    }
+    .superior{
+        position: relative;
+    }
+    .logo img{
+        max-width: 65%;
+    }
+    /*.menu a{
+        padding: 6px;
+    }*/
+    iframe {
+        margin-bottom: -15px;
+    }
+}
+@media screen and (min-width: 850px){
+    body{
+        font-size: 1.4rem;
+    }
+    iframe {
+        margin-bottom: -28px;
+    }
+}
